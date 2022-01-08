@@ -1,0 +1,33 @@
+                                <!DOCTYPE html>
+<head>
+<meta name="google-site-verification" content="44Tok9RSZND4u92H83exzj7dTd5qEZiX949iz23thpk" />
+<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<title>American Thighs</title>
+</head>
+
+<body>
+<audio preload="auto" id="nick-audio" src="nick.mp3" type="audio/mp3"></audio>
+
+<h1>AMERICAN &#991 THIGHS!</h1>
+<button id="swerve-photo" class="btn">
+  <img src="swerve.jpg" alt="Hi!">
+</button>
+
+<div class='icon-group'>
+  <a href="https://www.facebook.com/AmericanThighsRock" class='icon'><i class="fa fa-facebook fa-lg"></i></a>
+  <a href="mailto:americanthighsrock@gmail.com" class='icon'><i class="fa fa-envelope-o fa-lg"></i></a>
+</div>
+
+<script>
+  nickAudio = document.getElementById('nick-audio');
+  swervePhoto = document.getElementById('swerve-photo');
+  nickAudio.oncanplaythrough = function () {
+    swervePhoto.onclick = function () { nickAudio.play(); };
+  };
+</script>
+</body>
+</html>
+
+                            
