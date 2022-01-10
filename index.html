@@ -21,11 +21,13 @@
 </div>
 
 <script>
+window.onload = function () {
   nickAudio = document.getElementById('nick-audio');
   swervePhoto = document.getElementById('swerve-photo');
   nickAudio.oncanplaythrough = function () {
     swervePhoto.onclick = function () { nickAudio.play(); };
   };
+};
 </script>
 </body>
 </html>
